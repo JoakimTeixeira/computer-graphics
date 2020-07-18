@@ -1,0 +1,28 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "shell",
+      "label": "Build files with GLUT",
+      // for C files
+      "command": "gcc",
+      // for C++ files
+      // "command": "g++",
+      "args": [
+        "${fileBasename}",
+        "-o",
+        "${fileBasenameNoExtension}",
+        // linking with libraries: math, gl, glu, glut
+        "-lm",
+        "-lGL",
+        "-lGLU",
+        "-lglut"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": ["$gcc"],
+      "group": "build"
+    }
+  ]
+}
