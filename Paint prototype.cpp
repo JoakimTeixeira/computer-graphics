@@ -29,7 +29,7 @@ vector<float> py;
 
 int counter = 0;
 // screen dimension
-float DIM = 500;
+float DIM = 450;
 // screen proportion (scale)
 float SIZE = 10;
 

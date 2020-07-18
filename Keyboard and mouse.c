@@ -17,7 +17,7 @@
 #include <GL/glut.h>
 
 // screen size
-float DIM = 500;
+float DIM = 450;
 // screen dimension
 float size = 50;
 int aux = 0;
@@ -44,9 +44,9 @@ void objectTriangle()
 
 	// triangle coordinates
 	glBegin(GL_TRIANGLES);
-	glVertex2f(-35, -35);
-	glVertex2f(35, -35);
-	glVertex2f(0, 35);
+	glVertex2f(-30, -30);
+	glVertex2f(30, -30);
+	glVertex2f(0, 30);
 	glEnd();
 }
 
@@ -70,10 +70,10 @@ void objectSquare()
 
 	// square coordinates
 	glBegin(GL_QUADS);
-	glVertex2f(-20, 20);
-	glVertex2f(-20, -20);
-	glVertex2f(20, -20);
-	glVertex2f(20, 20);
+	glVertex2f(-30, 30);
+	glVertex2f(-30, -30);
+	glVertex2f(30, -30);
+	glVertex2f(30, 30);
 	glEnd();
 }
 

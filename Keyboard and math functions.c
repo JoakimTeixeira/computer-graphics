@@ -4,10 +4,11 @@
 	Basic commands
 
 	Keyboard:
-		- "1" key: shows a linear function 
-		- "2" key: shows a exponential function
-		- "3" key: shows a sine function
-		- R key: reset / remove cartesian system
+		- "1" key: draws a linear function 
+		- "2" key: draws a exponential function
+		- "3" key: draws a sine function
+		- C key: clear function drawing
+		- R key: toggle cartesian system
 */
 
 #include <GL/glut.h>
@@ -127,8 +128,8 @@ void main(int argc, char **argv)
 {
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGBA | GLUT_DEPTH);
-	glutInitWindowSize(400, 400);
-	glutInitWindowPosition(10, 100);
+	glutInitWindowSize(450, 450);
+	glutInitWindowPosition(100, 100);
 	glutCreateWindow("Keyboard and math functions");
 	// allows use of the keyboard
 	glutKeyboardFunc(keyboard);
